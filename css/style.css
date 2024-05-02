@@ -1,0 +1,398 @@
+
+.navbar-brand img {
+    max-height: 55px;
+}
+.navbar-brand {
+    font-weight: 500;
+    color: #009970;
+    font-size: 20px;
+    transition: .3s color;
+}
+
+.login-button{
+    background-color: #009970;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 20px;
+    border-radius: 49px;
+    text-decoration: none;
+    transition: 0.4s background-color;
+}
+.login-button:hover{
+    background-color: #00b383;
+}
+.nav-link{
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+}
+.nav-link:hover, .nav-link.active{
+    color: #000;
+}
+
+@media (max-width: 991px){
+    .nav-link::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background: #009970;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+    .nav-link:hover::before, .nav-link.active::before{
+        visibility: visible;
+        width: 100%;
+    }
+}
+
+.navbar-toggler{
+    border: none;
+    font-size: 1.24rem;
+}
+.navbar-toggler:focus, .btn-close{
+    boxshadow: none;
+    outline: none;
+}
+/* CSS pour animer le menu */
+.navbar-nav li {
+    position: relative;
+    transition: all 0.3s ease;
+
+}
+
+.navbar-nav li:hover {
+    background-color: transparent;
+
+}
+
+/* Afficher les sous-menus au survol */
+.navbar-nav li:hover > .dropdown-menu {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+/* Masquer les sous-menus par défaut */
+.dropdown-menu {
+    display: none;
+    position: fixed;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.175);
+    visibility: hidden;
+    opacity: 0;
+}
+.navbar-nav .nav-item .dropdown-menu {
+    border-radius: 10px; /* Bordure arrondie */
+    transition: all 0.3s ease; /* Animation des propriétés */
+}
+
+
+.overlay {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Pleine hauteur de la fenêtre */
+    background-image: url('code.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px; /* Ajout de padding */
+    box-sizing: border-box; /* Pour inclure le padding dans la largeur et la hauteur */
+}
+
+.overlay-content {
+    max-width: 600px; /* Largeur maximale du contenu */
+}
+
+.overlay h1 {
+    margin-bottom: 20px; /* Espacement en bas */
+}
+
+.overlay p {
+    margin-bottom: 0; /* Suppression de la marge en bas */
+}
+
+/* Styles pour les sections d'expertise et de projets */
+
+.container {
+    max-width: 98%; /* Limiter la largeur du contenu */
+
+}
+
+
+h2 {
+    text-align: center; /* Centrer les titres */
+    margin-bottom: 40px; /* Ajouter un espacement en bas */
+}
+
+.row {
+    margin-top: 30px; /* Ajouter un espacement en haut des lignes */
+}
+
+.col-md-4 {
+    margin-bottom: 30px; /* Ajouter un espacement en bas des colonnes */
+}
+
+h3 {
+    text-align: center; /* Centrer les sous-titres */
+}
+
+p {
+    text-align: justify; /* Justifier le texte */
+}
+
+
+
+@media (max-width: 600px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .row {
+        margin-top: 15px;
+    }
+
+    .col-md-4 {
+        margin-bottom: 15px; /
+    }
+}
+.expertise-title {
+    /* Vos styles personnalisés pour les titres d'expertise ici */
+    transition: color 0.3s ease; /* Animation de la couleur du texte */
+}
+
+.expertise-title:hover {
+    color: red; /* Exemple de changement de couleur au survol */
+}
+
+/* Styles spécifiques pour les titres de projets */
+.project-title {
+    /* Vos styles personnalisés pour les titres de projets ici */
+    transition: color 0.3s ease; /* Animation de la couleur du texte */
+}
+
+.project-title:hover {
+    color: darkslategray; /* Exemple de changement de couleur au survol */
+}
+/* Bordure arrondie pour les paragraphes */
+.col-md-4 p {
+    border-radius: 10px; /* Bordure arrondie */
+    transition: border-color 0.3s ease; /* Animation de la couleur de la bordure */
+}
+
+/* Animation de couleur au survol de la bordure */
+.col-md-4 p:hover {
+    border-color: red; /* Couleur de la bordure au survol */
+}
+
+/* Styles pour la section Portefolio */
+#portfolio {
+    max-width: 98%; /* Limiter la largeur du contenu */
+}
+
+#portfolio h2 {
+    text-align: center; /* Centrer le titre */
+    margin-bottom: 40px; /* Ajouter un espacement en bas */
+}
+
+#portfolio .row {
+    margin-top: 30px; /* Ajouter un espacement en haut des lignes */
+}
+
+#portfolio .col-md-4 {
+    margin-bottom: 30px; /* Ajouter un espacement en bas des colonnes */
+}
+
+#portfolio h3 {
+    text-align: center;/* Centrer les titres de projet */
+}
+
+#portfolio p {
+    text-align: justify; /* Justifier le texte */
+}
+
+/* Bordure arrondie pour les descriptions de projet */
+#portfolio .col-md-4 p {
+    border-radius: 10px; /* Bordure arrondie */
+    transition: border-color 0.3s ease; /* Animation de la couleur de la bordure */
+}
+
+/* Animation de couleur au survol de la bordure */
+#portfolio .col-md-4 p:hover {
+    border-color: red; /* Couleur de la bordure au survol */
+}
+/* Styles pour la section Expertise */
+#expertise {
+    max-width: 98%; /* Limiter la largeur du contenu */
+}
+
+#expertise h2 {
+    text-align: center; /* Centrer le titre */
+    margin-bottom: 40px; /* Ajouter un espacement en bas */
+}
+
+#expertise .row {
+    margin-top: 30px; /* Ajouter un espacement en haut des lignes */
+}
+
+#expertise .col-md-4 {
+    margin-bottom: 30px; /* Ajouter un espacement en bas des colonnes */
+}
+
+#expertise h3 {
+    text-align: center; /* Centrer les titres de projet */
+}
+
+#expertise p {
+    text-align: justify; /* Justifier le texte */
+}
+
+/* Bordure arrondie pour les descriptions de projet */
+#expertise .col-md-4 p {
+    border-radius: 10px; /* Bordure arrondie */
+    transition: border-color 0.3s ease; /* Animation de la couleur de la bordure */
+}
+
+/* Animation de couleur au survol de la bordure */
+#expertise .col-md-4 p:hover {
+    border-color: red; /* Couleur de la bordure au survol */
+}
+
+/* Styles pour la section Projets */
+#projets {
+    max-width: 98%; /* Limiter la largeur du contenu */
+}
+
+#projets h2 {
+    text-align: center; /* Centrer le titre */
+    margin-bottom: 40px; /* Ajouter un espacement en bas */
+}
+
+#projets .row {
+    margin-top: 30px; /* Ajouter un espacement en haut des lignes */
+}
+
+#projets .col-md-4 {
+    margin-bottom: 30px; /* Ajouter un espacement en bas des colonnes */
+}
+
+#projets h3 {
+    text-align: center; /* Centrer les titres de projet */
+}
+
+#projets p {
+    text-align: justify; /* Justifier le texte */
+}
+
+/* Bordure arrondie pour les descriptions de projet */
+#projets .col-md-4 p {
+    border-radius: 10px; /* Bordure arrondie */
+    transition: border-color 0.3s ease; /* Animation de la couleur de la bordure */
+}
+
+/* Animation de couleur au survol de la bordure */
+#projets .col-md-4 p:hover {
+    border-color: red; /* Couleur de la bordure au survol */
+}
+/* Styles pour les titres "Expertise", "Projets" et "Portefolio" */
+.section-title {
+    text-align: center; /* Centrer le texte */
+    font-size: 2.5rem; /* Taille de police */
+    color: #666777; /* Couleur du texte */
+    margin-bottom: 40px; /* Espacement en bas */
+    text-transform: uppercase; /* Convertir en majuscules */
+    font-weight: bold; /* Gras */
+    position: relative; /* Position relative pour les éléments enfants */
+    display: inline-block; /* Afficher en tant que bloc */
+    cursor: pointer;
+    border: 1px solid;
+    box-shadow: #2c3034 var();
+    border-radius: 20px
+}
+
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%; /* Largeur de la bordure */
+    height: 3px; /* Épaisseur de la bordure */
+    background-color: transparent; /* Couleur de la bordure initiale */
+    transition: background-color 0.3s ease; /* Animation de la couleur de la bordure */
+}
+
+
+.section-title:hover::after {
+    background-color: #007bff;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-info img {
+    width: 100%;
+    max-width: 240px; /* Taille de la photo ajustable selon tes préférences */
+    margin-right: 20px; /* Espacement entre la photo et les renseignements */
+}
+
+.personal-info {
+    flex-grow: 1; /* Permet aux renseignements de prendre tout l'espace disponible */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    background-color: #999;
+    padding: 10px;
+    border-radius: 20px;
+}
+input {
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px 14px;
+    width: 60%;
+    border: 1px solid #999;
+    border-radius: 10px;
+    outline: none;
+    background: #eaeaee;
+
+}
+
+@media (max-width: 600px) {
+    .profile-info {
+        flex-direction: column; /* Met la photo au-dessus des renseignements sur les écrans étroits */
+        text-align: center; /* Centre le texte des renseignements sur les écrans étroits */
+    }
+    .profile-info img {
+        margin-right: 0; /* Aucun espacement à droite sur les écrans étroits */
+        margin-bottom: 20px; /* Espacement sous la photo sur les écrans étroits */
+    }
+}
+
+
+
+
+
+
+

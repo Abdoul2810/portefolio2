@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon porte folio</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-n/aEUQ3sOFs0cGP/yD9ob+P4xim0rMQ10FTrjLevLl6f//KpUWy/aAYh9X2Wr+wX" crossorigin="anonymous">
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-danger-subtle fixed-top id" id="scroll">
+    <div class="container-fluid">
+
+        <a class="navbar-brand" href="#"><img src="css/inf.png" alt="Logo"></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#home">Accueille</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#expertise" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Service</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#dev">Programmation</a></li>
+                            <li><a class="dropdown-item" href="#dev">CyberSecurité</a></li>
+                            <li><a class="dropdown-item" href="#dev">Base de donné</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle justify-content-center" href="#"  role="button" data-bs-toggle="dropdown" aria-expanded="false">Domaine</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#projet">Enseignement</a></li>
+                            <li><a class="dropdown-item" href="#projet">Formation</a></li>
+                            <li><a class="dropdown-item" href="#projet">Industrie</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#folio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+
+                <button type="button" class="login-button">Connectez-vous</button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="overlay border text-white border-light p-4" id="home">
+    <div class="container text-center">
+        <h1 class="mb-4 text-white">Developpeur front-end</h1>
+        <p class="m-0 text-center" >Le développement web est une discipline fascinante qui consiste à créer des applications et des sites web pour le monde numérique.</p>
+    </div>
+</div>
+
+<div id="expertise" class="container mt-5">
+    <h2 class="section-title" id="dev">Services</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <h3 class="mt-3 mb-3">Programmation</h3>
+            <p class="rounded-lg bg-info p-3 shadow-lg">Maîtrise des langages de programmation tels que JavaScript, Python, Java, et C++, ainsi que des frameworks et bibliothèques populaires.</p>
+        </div>
+        <div class="col-md-4">
+            <h3 class="mt-3 mb-3">Cybersécurité</h3>
+            <p class="rounded-lg bg-info p-3 shadow-lg">Implémentation de mesures de sécurité avancées pour protéger les systèmes informatiques contre les cybermenaces, y compris les attaques de logiciels malveillants et les violations de données.</p>
+        </div>
+        <div class="col-md-4">
+            <h3 class="mt-3 mb-3">Base de données</h3>
+            <p class="rounded-lg bg-info p-3 shadow-lg">Gestion efficace des bases de données relationnelles et non relationnelles, y compris la modélisation, la manipulation et l'optimisation des données pour assurer des performances optimales.</p>
+        </div>
+    </div>
+</div>
+
+<div id="projets" class="container mt-5">
+    <h2 class="section-title" id="projet">Domaines de Projet</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <h3 class="mt-3 mb-3">Enseignement</h3>
+            <p class="rounded-lg bg-info p-3 shadow-lg">Conception et développement d'une plateforme d'apprentissage en ligne pour une institution éducative, fournissant des cours interactifs et des ressources pédagogiques.</p>
+        </div>
+        <div class="col-md-4">
+            <h3 class="mt-3 mb-3">Formation</h3>
+            <p class="rounded-lg bg-info p-3 shadow-lg">Création d'un système de gestion des formations pour une entreprise, offrant des modules de formation personnalisés et un suivi des progrès des apprenants.</p>
+        </div>
+        <div class="col-md-4">
+            <h3 class="mt-3 mb-3">Industrie</h3>
+            <p class="rounded-lg bg-info p-3 shadow-lg">Développement d'une application de suivi des ressources pour une entreprise industrielle, permettant une gestion efficace des stocks et des opérations de production.</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div id="portfolio" class="container mt-5">
+    <h2 class="section-title text-center mb-4" id="folio">Portefolio</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-6 text-center">
+            <a href="moncv.pdf" download="moncv.pdf" class="btn btn-primary">Télécharger mon CV</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="container mt-5">
+    <div class="row">
+
+        <div class="col-md-6">
+            <div class="profile-info">
+                <img src="css/karim%20(2).jpg" alt="Ma photo">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="contact-form">
+                <h3>Contactez-moi</h3>
+                <form>
+                    <div class="mb-3">
+                        <label for="nom" class="form-label">Nom</label>
+                        <input type="text" class="form-control" id="nom" placeholder="Votre nom">
+                    </div>
+                    <div class="mb-3">
+                        <label for="prenom" class="form-label">Prenom</label>
+                        <input type="text" class="form-control" id="prenom" placeholder="Votre prenom">
+                    </div>
+                    <div class="mb-3">
+                        <label for="adresse" class="form-label">Adresse</label>
+                        <input type="text" class="form-control" id="adresse" placeholder="Votre adresse">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Votre email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="laisser un message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer class="footer  bg-dark mt-5 text-white " style="background-color: #f8f9fa;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p>&copy; 2024 Gool Consolideted. Tous droits réservés.</p>
+            </div>
+            <div class="col-md-6 text-end">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#"><i class="bi bi-facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="bi bi-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/form.js"></script>
+</body>
+</html>
